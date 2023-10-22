@@ -1,0 +1,2 @@
+GET https://localhost:8022/get-items/a@gmail.com
+Content-Type: application/json
