@@ -49,7 +49,7 @@ function Register() {
       <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5">
         <div className="md:w-1/2 px-16">
           <h2 className="font-bold text-2xl text-[#002D74]">Register</h2>
-          <p className="text-sm text-[#002D74] mt-4">If you already a member, log in</p>
+          <p className="text-sm text-[#002D74] mt-4">If you do not have an account</p>
           <form onSubmit={registerUser} className="flex flex-col gap-4">
             <input
               placeholder="Enter Name"
