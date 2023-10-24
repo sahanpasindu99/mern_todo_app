@@ -9,6 +9,16 @@ export function UserContextProvider({children}){
     const navigate=useNavigate();
       const [user,setUser]=useState(null);
 
+      // using cookies
+      
+      // useEffect(()=>{
+      //   if(!user){
+      //     axios.get('/profile').then(({data})=>{
+      //       setUser(data)
+      //     })
+      //   }
+      // },[])
+
       const validateUser=async()=>{
         setIsLoading(true);
         let token

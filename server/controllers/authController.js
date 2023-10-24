@@ -168,10 +168,8 @@ const resetPassword=async(req,res)=>{
 }
 
 const getProfile=(req,res)=>{
-  //  const {token}=req.cookies
+  const {token}=req.cookies
     try {
-        const token = localStorage.getItem('Sahan_ToDoItem');
-
         if(token){
             jwt.verify(token,process.env.JWT_SECRET,{},(err,user)=>{
              if(err) {
